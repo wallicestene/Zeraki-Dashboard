@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* styles.css */
+input[type="text"],
+[type="password"],
+[type="email"],[type="number"] {
+  @apply border border-black w-full py-2  indent-2 outline-none rounded-md;
+}

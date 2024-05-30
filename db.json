@@ -1,0 +1,196 @@
+{
+  "schools": [
+    {
+      "id": "1",
+      "name": "Greenfield Primary School",
+      "type": "Primary",
+      "products": [
+        "Zeraki Analytics",
+        "Zeraki Finance"
+      ],
+      "county": "Nairobi",
+      "registrationDate": "2022-01-15",
+      "contact": "contact@greenfieldprimary.co.ke"
+    },
+    {
+      "id": "2",
+      "name": "Bright Future High School",
+      "type": "Secondary",
+      "products": [
+        "Zeraki Analytics",
+        "Zeraki Timetable"
+      ],
+      "county": "Mombasa",
+      "registrationDate": "2021-05-20",
+      "contact": "info@brightfuturehigh.co.ke"
+    },
+    {
+      "id": "3",
+      "name": "International School of Kenya",
+      "type": "IGCSE",
+      "products": [
+        "Zeraki Finance"
+      ],
+      "county": "Kisumu",
+      "registrationDate": "2023-03-10",
+      "contact": "admin@isk.co.ke"
+    }
+  ],
+  "invoices": [
+    {
+      "item": "Zeraki Analytics",
+      "schoolId": 1,
+      "amount": 1000,
+      "dueDate": "2023-06-30",
+      "paidAmount": 0,
+      "balance": 1000,
+      "status": "pending",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "schoolId": 2,
+      "item": "Zeraki Finance",
+      "amount": 1500,
+      "dueDate": "2023-07-15",
+      "paidAmount": 0,
+      "balance": 1500,
+      "status": "pending"
+    },
+    {
+      "id": "3",
+      "schoolId": 1,
+      "item": "Zeraki Timetable",
+      "amount": 2000,
+      "dueDate": "2023-08-01",
+      "paidAmount": 500,
+      "balance": 1500,
+      "status": "partial"
+    },
+    {
+      "id": "4",
+      "schoolId": 3,
+      "item": "Zeraki Analytics",
+      "amount": 1200,
+      "dueDate": "2023-08-10",
+      "paidAmount": 0,
+      "balance": 1200,
+      "status": "pending"
+    },
+    {
+      "id": "5",
+      "schoolId": 2,
+      "item": "Zeraki Timetable",
+      "amount": 1000,
+      "dueDate": "2023-09-05",
+      "paidAmount": 1000,
+      "balance": 0,
+      "status": "complete"
+    },
+    {
+      "item": "Zeraki Finance",
+      "schoolId": 4,
+      "amount": 1800,
+      "dueDate": "2023-09-20",
+      "paidAmount": 0,
+      "balance": 1800,
+      "status": "pending",
+      "id": "6"
+    }
+  ],
+  "collections": [
+    {
+      "id": "1",
+      "invoiceId": 1,
+      "collectionNumber": "COL001",
+      "date": "2023-01-20",
+      "status": "Valid",
+      "amount": 5000
+    },
+    {
+      "id": "2",
+      "invoiceId": 3,
+      "collectionNumber": "COL002",
+      "date": "2023-02-10",
+      "status": "Valid",
+      "amount": 7000
+    }
+  ],
+  "metrics": {
+    "collections": 2,
+    "signups": 3,
+    "revenue": 12000,
+    "bouncedCheques": 0
+  },
+  "pieData": {
+    "labels": [
+      "Zeraki Analytics",
+      "Zeraki Finance",
+      "Zeraki Timetable"
+    ],
+    "datasets": [
+      {
+        "label": "Targets",
+        "data": [
+          100,
+          80,
+          60
+        ],
+        "backgroundColor": [
+          "#11563a",
+          "#b8fadd",
+          "#1acd81"
+        ]
+      },
+      {
+        "label": "Achieved",
+        "data": [
+          50,
+          60,
+          40
+        ],
+        "backgroundColor": [
+          "#11563aAA",
+          "#b8faddAA",
+          "#1acd81AA"
+        ]
+      }
+    ]
+  },
+  "barData": {
+    "labels": [
+      "Primary",
+      "Secondary",
+      "IGCSE"
+    ],
+    "datasets": [
+      {
+        "label": "Zeraki Analytics",
+        "data": [
+          30,
+          20,
+          10
+        ],
+        "backgroundColor": "#11563a"
+      },
+      {
+        "label": "Zeraki Finance",
+        "data": [
+          25,
+          15,
+          5
+        ],
+        "backgroundColor": "#b8fadd"
+      },
+      {
+        "label": "Zeraki Timetable",
+        "data": [
+          20,
+          10,
+          10
+        ],
+        "backgroundColor": "#1acd81"
+      }
+    ]
+  }
+}
